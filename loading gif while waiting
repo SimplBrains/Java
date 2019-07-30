@@ -1,0 +1,11 @@
+JSP
+Step 1:
+In JSP put below image which is set as display none. Means it will not load on start.
+<img id="loader" src="images/loader.gif"  width="200" height="100" style="display: none;margin-left: 30%;"/>
+
+Step 2:
+But on click of below submit button, we are chenging the display to block. Hence it will be visible untill the processing will go, and response is not received from servlet.
+
+<form action="TemplateUpload" method="post" enctype="multipart/form-data">
+<input type="submit" onclick="document.getElementById('loader').style.display = 'block';" />
+</form>
